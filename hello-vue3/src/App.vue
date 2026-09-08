@@ -1,7 +1,7 @@
 <template>
     <div class="hello">
     <h1>hello vue 3!</h1>
-    <Person />
+    <Person></Person>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="Person">
-        <h3>姓名：{{ a }}</h3>
-        <button>显示联系方式</button>
+        <h3>姓名：{{ name }}</h3>
+        <button @click="showContact">显示联系方式</button>
     </div>
 </template>
 
@@ -10,9 +10,12 @@
         name: "Person",
         setup() {
             let username = "张三";
-            return {
-                a: username
+            let phone = "13800000000";
+
+            function showContact(): void {
+                alert(phone);
             }
+            return () => '箭头函数渲染内容';
         }
     }
 </script>
